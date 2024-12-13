@@ -1,5 +1,6 @@
-# Ignore our secret credentials
+# Ignore our secret credentials and access vars
 client_secrets.json
+config.py
 
 ### Classic Python .gitignore below ###
 
