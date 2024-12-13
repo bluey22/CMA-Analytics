@@ -1,13 +1,9 @@
-# connect_to_ga4.py
+# ga4_api.py
+
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
+from google.analytics.data_v1beta.types import RunReportRequest, DateRange, Dimension, Metric
 from google.analytics.data_v1beta.types import GetMetadataRequest
-from google.analytics.data_v1beta.types import (
-    RunReportRequest,
-    DateRange,
-    Dimension,
-    Metric,
-)
-import re as re
+import re
 
 def list_dimensions_and_metrics(property_id):
     client = BetaAnalyticsDataClient()
@@ -62,15 +58,3 @@ def fetch_artwork_pages(property_id, start_date, end_date, limit, page_size=50):
         total_fetched += len(response.rows)
 
     return data
-
-# Test the function
-if __name__ == "__main__":
-    analytics_data = fetch_artwork_pages(
-        property_id="412629190", 
-        start_date="2024-12-12",
-        end_date="today",
-        limit=100,  
-    )
-    print(f"{len(analytics_data)} Found, Filtered Artwork Data:")
-    for item in analytics_data:
-        print(f"Accession Number: {item['accession_number']}, Views: {item['views']}")

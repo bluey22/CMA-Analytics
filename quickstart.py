@@ -32,9 +32,10 @@ from google.analytics.data_v1beta.types import (
     RunReportRequest,
 )
 from google.auth import default  # For Sanity Check
+from config import PROPERTY_ID
 
 
-def sample_run_report(property_id="412629190 "):
+def sample_run_report(property_id=PROPERTY_ID):
     """Runs a simple report on a Google Analytics 4 property."""
     # TODO(developer): Uncomment this variable and replace with your
     #  Google Analytics 4 property ID before running the sample.
