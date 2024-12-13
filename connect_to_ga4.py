@@ -1,4 +1,4 @@
-# app.py
+# connect_to_ga4.py
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import GetMetadataRequest
 from google.analytics.data_v1beta.types import (
