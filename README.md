@@ -42,3 +42,7 @@ Example:
 python main.py --start-date 2024-01-01 --end-date 2024-12-01 --top 10 --output table
 ```
 
+# TODO
+* Display images in a lightweight gui app
+* Display data for each artwork leading back to Jan 1st, 2024
+
