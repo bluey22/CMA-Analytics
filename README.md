@@ -29,12 +29,10 @@ pip install -r requirements.txt
 ```
 
 # The application supports the following command-line arguments:
-```bash
---start-date: Start date for the data range in YYYY-MM-DD format (default: past 90 days).
---end-date: End date for the data range in YYYY-MM-DD format (default: today).
---top: Number of top artworks to retrieve (5, 10, or 25, default: 5).
---output: Output format (table or graph, default: table).
-```
+`--start-date`: Start date for the data range in YYYY-MM-DD format (default: past 90 days).
+`--end-date`: End date for the data range in YYYY-MM-DD format (default: today).
+`--top`: Number of top artworks to retrieve (5, 10, or 25, default: 5).
+`--output`: Output format (table or graph, default: table).
 Example:
 ```bash
 python main.py --start-date 2024-01-01 --end-date 2024-12-01 --top 10 --output table
