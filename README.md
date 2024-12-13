@@ -1,4 +1,4 @@
-CMA Analytics
+# CMA Analytics
 This Python command-line application retrieves and visualizes analytics data for artwork from the Cleveland Museum of Art. It fetches data from Google Analytics and the CMA Open Access API, allowing users to view statistics, metadata, and thumbnails of the most viewed artworks.
 
 Features
